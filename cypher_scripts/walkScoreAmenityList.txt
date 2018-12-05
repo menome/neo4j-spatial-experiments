@@ -1,0 +1,47 @@
+// ------------------------------------------------------------------
+// Neo4j Spatial Experiments, December 2018
+// Written by Menome Technologies Inc. http://www.menome.com
+//
+// Amenities list as derived from the OSM data and assinged ranks
+// ------------------------------------------------------------------
+
+// 3 rank the amenities
+"restaurant" 3
+"nightclub" 3
+"fast_food" 3
+"pub" 3
+"ice_cream" 3
+
+"cafe" 2 
+"marketplace" 2
+
+"conference_centre" 1
+"theatre" 1
+"university" 1
+"social_facility" 1
+"cinema" 1
+"library" 1
+"bar" 1
+"embassy" 1
+"school" 1
+"community_centre" 1
+"fountain"
+"place_of_worship" 1
+"bank" 1 
+"concert_hall" 1
+
+// health 
+"hospital"
+"fire_station"
+"pharmacy"
+"bench"
+"drinking_water"
+"veterinary"
+"dentist"
+"doctors"
+
+// sport
+"bench"
+"drinking_water"
+"bicycle_parking"
+"fountain"

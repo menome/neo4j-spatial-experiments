@@ -1,0 +1,8 @@
+// ------------------------------------------------------------------
+// Neo4j Spatial Experiments, December 2018
+// Written by Menome Technologies Inc. http://www.menome.com
+//
+// Generate  primary amenity points of interest 
+// ------------------------------------------------------------------
+
+call apoc.periodic.iterate("unwind ['Child Care' ,'Cultural Centre' ,'ambulance' ,'arts_centre' ,'bandshell' ,'bandstand' ,'bench' ,'bicycle_parking' ,'bicycle_rental' ,'bicycle_repair_station' ,'blood_donor_clinic' ,'camp' ,'campground' ,'child_care' ,'childcare' ,'chlldcare' ,'church' ,'clinic' ,'college' ,'community_centre' ,'doctors' ,'doctors;dentist' ,'education_centre' ,'emergency_room' ,'farmers_market' ,'fast_food' ,'fire_station' ,'fire_station;ems_station' ,'food_court' ,'green_roof' ,'greenhouse' ,'gym' ,'gymnasium' ,'health centre' ,'hill' ,'hospital' ,'marketplace' ,'martial_arts' ,'montessori_school' ,'music_venue' ,'optician' ,'optometrist' ,'orthodonists' ,'orthodontist' ,'orthopedic' ,'park_entrance' ,'pharmacy' ,'phyisotherapy' ,'physiotherapist' ,'physiotherapy' ,'place_of_worship' ,'playground' ,'police' ,'pool; fitness centre; ice rinks' ,'post_office' ,'preschool' ,'recycling' ,'restaurant' ,'retail' ,'school' ,'university'] AS amenity MATCH (x:OSMNode)-[:TAGS]->(t:OSMTags) WHERE t.amenity = amenity AND NOT (x)-[:ROUTE]->() return x, x.location as poi", "MATCH (n:OSMNode) WHERE distance(poi, n.location) < 100 WITH x, n MATCH (n)<-[:NODE]-(wn:OSMWayNode), (wn)<-[:NEXT*0..10]-(wx), (wx)<-[:FIRST_NODE]-(w:OSMWay)-[:TAGS]->(wt:OSMTags) WITH x, w, wt WHERE exists(wt.highway) WITH x, collect(w) as ways CALL spatial.osm.routePointOfInterest(x,ways) YIELD node SET x:PointOfInterest ",{limit:100,parallel:false})
