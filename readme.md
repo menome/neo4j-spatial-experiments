@@ -6,6 +6,8 @@ While these data are available on the [Walkscore website](https://www.walkscore.
 
 I also wanted to try to visualize how a community changes over time by connecting Neo4j to the [Deck.gl](http://deck.gl/#/) visualizaiton framework. 
 
+![Deck GL](/deck.png "Logo Title Text 1")
+
 # Walkscore Data Example: 
 
 Uses:
@@ -21,9 +23,11 @@ Uses:
 
 Follow these steps to get a running neo4j instance loaded with demo data.
 
-### 1. Start DB
+### 1. Database
 
-While in the root of this repo, run:
+Unzip the Neo4j database: neo4j-data/databases/graph.db.zip 
+
+In the root of this repo, run:
 
 ```
 docker-compose up
