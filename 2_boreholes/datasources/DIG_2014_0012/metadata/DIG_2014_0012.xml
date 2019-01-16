@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<metadata>
+<idinfo>
+  <citation>
+    <citeinfo>
+      <origin>Alberta Energy Regulator</origin>
+      <origin>Alberta Geological Survey</origin>
+      <pubdate>2014</pubdate>
+      <title>Compilation of Alberta Geological Survey Borehole Data (tabular data, tab delimited format)</title>
+      <geoform>tabular digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2014-0012</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <othercit>Compiled by E.J. Waters and L.D. Andriashek.</othercit>
+      <onlink>http://www.ags.gov.ab.ca/publications/DIG/ZIP/DIG_2014_0012.zip</onlink>
+    </citeinfo>
+  </citation>
+  <descript>
+    <abstract>Since its inception in 1920, the Alberta Geological Survey (AGS) has drilled several thousand boreholes across the province. Most were drilled only into the unconsolidated sediments overlying the top of bedrock. In 2010, AGS staff began a project to systematically compile all of the borehole log information into a database. This Digital Data product and its companion Open File Report, OFR 2014-06 are the interim results of this initiative.
+The dataset comprises three tables: Sources.txt, Boreholes.txt and Intervals.txt, as well as metadata. The Sources table gives summary information about the AGS project for which each borehole was drilled. The Boreholes table gives summary information about each borehole, such as location, drilling method, date, and total depth of the hole. The Intervals table gives descriptive geological information about each distinct geological horizon encountered in the borehole, including lithology and colour of the material. The tables have primary keys on them so they may be loaded into a relational database, GIS system, or geological modelling program. This dataset is an interim release of 266 boreholes.</abstract>
+    <purpose>For computer display, query and modelling of AGS borehole data.</purpose>
+    <supplinf>Language: In English;</supplinf>
+  </descript>
+  <timeperd>
+    <timeinfo>
+      <rngdates>
+        <begdate>1964</begdate>
+        <enddate>2002</enddate>
+      </rngdates>
+    </timeinfo>
+    <current>ground condition</current>
+  </timeperd>
+  <status>
+    <progress>Complete</progress>
+    <update>Irregular</update>
+  </status>
+  <spdom>
+    <bounding>
+      <westbc>-120</westbc>
+      <eastbc>-110</eastbc>
+      <northbc>60</northbc>
+      <southbc>49</southbc>
+    </bounding>
+  </spdom>
+  <keywords>
+    <theme>
+      <themekt>none</themekt>
+      <themekey>boreholes</themekey>
+      <themekey>geology</themekey>
+      <themekey>surficial</themekey>
+    </theme>
+    <theme>
+      <themekt>ISO 19115 Topic Category</themekt>
+      <themekey>geoscientificInformation</themekey>
+    </theme>
+    <place>
+      <placekt>none</placekt>
+      <placekey>72e</placekey>
+      <placekey>72l</placekey>
+      <placekey>72m</placekey>
+      <placekey>73d</placekey>
+      <placekey>73e</placekey>
+      <placekey>73l</placekey>
+      <placekey>73m</placekey>
+      <placekey>74d</placekey>
+      <placekey>74e</placekey>
+      <placekey>74l</placekey>
+      <placekey>74m</placekey>
+      <placekey>82g</placekey>
+      <placekey>82h</placekey>
+      <placekey>82i</placekey>
+      <placekey>82j</placekey>
+      <placekey>82n</placekey>
+      <placekey>82o</placekey>
+      <placekey>82p</placekey>
+      <placekey>83a</placekey>
+      <placekey>83b</placekey>
+      <placekey>83c</placekey>
+      <placekey>83d</placekey>
+      <placekey>83e</placekey>
+      <placekey>83f</placekey>
+      <placekey>83g</placekey>
+      <placekey>83h</placekey>
+      <placekey>83i</placekey>
+      <placekey>83j</placekey>
+      <placekey>83k</placekey>
+      <placekey>83l</placekey>
+      <placekey>83m</placekey>
+      <placekey>83n</placekey>
+      <placekey>83o</placekey>
+      <placekey>83p</placekey>
+      <placekey>84a</placekey>
+      <placekey>84b</placekey>
+      <placekey>84c</placekey>
+      <placekey>84d</placekey>
+      <placekey>84e</placekey>
+      <placekey>84f</placekey>
+      <placekey>84g</placekey>
+      <placekey>84h</placekey>
+      <placekey>84i</placekey>
+      <placekey>84j</placekey>
+      <placekey>84k</placekey>
+      <placekey>84l</placekey>
+      <placekey>84m</placekey>
+      <placekey>84n</placekey>
+      <placekey>84o</placekey>
+      <placekey>84p</placekey>
+      <placekey>alberta</placekey>
+      <placekey>buffalo head hills</placekey>
+      <placekey>calling lake</placekey>
+      <placekey>canada</placekey>
+      <placekey>fort mcmurray</placekey>
+      <placekey>high level</placekey>
+      <placekey>peace river</placekey>
+      <placekey>peerless lake</placekey>
+      <placekey>pelican river</placekey>
+      <placekey>red earth</placekey>
+      <placekey>wabasca</placekey>
+    </place>
+  </keywords>
+  <accconst>Public</accconst>
+  <useconst>Acknowledgement of the Alberta Energy Regulator/Alberta Geological Survey as the originator/source of this information is required as described in the Open Government License - Alberta.</useconst>
+  <ptcontac>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </ptcontac>
+  <datacred>E.J. Waters</datacred>
+  <crossref>
+    <citeinfo>
+      <origin>Alberta Energy Regulator</origin>
+      <origin>Alberta Geological Survey</origin>
+      <origin>Waters, E.J.</origin>
+      <origin>Andriashek, L.D.</origin>
+      <pubdate>2014</pubdate>
+      <title>Compilation of Boreholes Drilled or Logged by the Alberta Geological Survey</title>
+      <geoform>document</geoform>
+      <serinfo>
+        <sername>Open File Report</sername>
+        <issue>OFR 2014-06</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <othercit>ISBN: 978-1-4601-0130-8</othercit>
+      <onlink>http://www.ags.gov.ab.ca/publications</onlink>
+    </citeinfo>
+  </crossref>
+</idinfo>
+<dataqual>
+  <attracc>
+    <attraccr>Attribute values were checked periodically during the digitization process using query tools in MS Access, by spell-checking in MS Excel, and visual inspection of check plots of strip logs produced using ViewLog software. Where possible, constraints were placed on attribute domains to minimize digitizing errors.</attraccr>
+  </attracc>
+  <logic>This is a compilation of data from many project sources. Project areas may overlap. Only boreholes that could be located with confidence are included in this dataset, including holes re-drilled at a given location because of drilling difficulties. No attempt has been made to standardize attribute values within and among project datasets. Log data are the observations of many different geologists over many decades.</logic>
+  <complete>These data comprise approximately 3.5% of the total number of holes drilled by the AGS since 1920. We intend to publish further sets as we complete the digitization of the remaining holes.</complete>
+  <posacc>
+    <horizpa>
+      <horizpar>Location accuracy of holes varies widely throughout this dataset, ranging from +/- 25 - 400 m. Each hole is tagged with the compiler&apos;s estimate of its positional precision, as values in the Boreholes table&apos;s [Spatial_Precision] field.</horizpar>
+    </horizpa>
+    <vertacc>
+      <vertaccr>There are many sources of uncertainty associated with depth accuracy of borehole data and a full discussion is beyond the scope of this document. Depth accuracy is a function of drilling method, sampling/drilling interval size, and experience and judgement of the logging geologist. Most of the interval data in this data set is recorded as it appears on the original log with the following exceptions. In instances where the amount of core recovered is greater or less than the drilled depth, adjustments were made to described interval top and bottom depths. This adjustment was made to intervals of data source IDs 2, 3, 4, 5, 6, 7, 33 and 36.</vertaccr>
+    </vertacc>
+  </posacc>
+  <lineage>
+    <srcinfo>
+      <srccite>
+        <citeinfo>
+          <origin>Alberta Energy and Utilities Board</origin>
+          <origin>Alberta Geological Survey</origin>
+          <origin>Pawlowicz, J.G.</origin>
+          <origin>Jean, G.M.</origin>
+          <origin>Fenton, M.M.</origin>
+          <pubdate>19960131</pubdate>
+          <title>Preliminary Stratigraphic Tests to Support Mineral Exploration: Northern Alberta</title>
+          <geoform>document</geoform>
+          <serinfo>
+            <sername>Open File Report</sername>
+            <issue>OFR 1995-11</issue>
+          </serinfo>
+          <pubinfo>
+            <pubplace>Edmonton, Alberta, Canada</pubplace>
+            <publish>Alberta Energy and Utilities Board</publish>
+          </pubinfo>
+        </citeinfo>
+      </srccite>
+      <srcscale>0</srcscale>
+      <typesrc>online</typesrc>
+      <srctime>
+        <timeinfo>
+          <sngdate>
+            <caldate>1995</caldate>
+          </sngdate>
+        </timeinfo>
+        <srccurr>ground condition</srccurr>
+      </srctime>
+      <srccitea>SourceID 5</srccitea>
+      <srccontr>Peace River, 1995 project holes</srccontr>
+    </srcinfo>
+    <srcinfo>
+      <srccite>
+        <citeinfo>
+          <origin>Alberta Energy and Utilities Board</origin>
+          <origin>Alberta Geological Survey</origin>
+          <origin>Fenton, M.M.</origin>
+          <origin>Pawlowicz, J.G.</origin>
+          <pubdate>1998</pubdate>
+          <title>Reconnaissance Till Mineral and Geochemical Survey with Emphasis on Northern Alberta; Project Final Report</title>
+          <geoform>document</geoform>
+          <serinfo>
+            <sername>Open File Report</sername>
+            <issue>OFR 1996-07</issue>
+          </serinfo>
+          <pubinfo>
+            <pubplace>Edmonton, Alberta, Canada</pubplace>
+            <publish>Alberta Energy and Utilities Board</publish>
+          </pubinfo>
+        </citeinfo>
+      </srccite>
+      <srcscale>0</srcscale>
+      <typesrc>online</typesrc>
+      <srctime>
+        <timeinfo>
+          <sngdate>
+            <caldate>1993</caldate>
+          </sngdate>
+        </timeinfo>
+        <srccurr>ground condition</srccurr>
+      </srctime>
+      <srccitea>SourceID 4</srccitea>
+      <srccontr>High Level, 1993 project holes</srccontr>
+    </srcinfo>
+    <srcinfo>
+      <srccite>
+        <citeinfo>
+          <origin>Alberta Energy and Utilities Board</origin>
+          <origin>Alberta Geological Survey</origin>
+          <origin>Pawlowicz, J.G.</origin>
+          <origin>Fenton, M.M.</origin>
+          <pubdate>19980403</pubdate>
+          <title>Auger Core Lithologs from the Wabasca/Red Earth Area, North-Central Alberta</title>
+          <geoform>document</geoform>
+          <serinfo>
+            <sername>Open File Report</sername>
+            <issue>OFR 1998-03</issue>
+          </serinfo>
+          <pubinfo>
+            <pubplace>Edmonton, Alberta, Canada</pubplace>
+            <publish>Alberta Energy and Utilities Board</publish>
+          </pubinfo>
+        </citeinfo>
+      </srccite>
+      <srcscale>0</srcscale>
+      <typesrc>online</typesrc>
+      <srctime>
+        <timeinfo>
+          <sngdate>
+            <caldate>1997</caldate>
+          </sngdate>
+        </timeinfo>
+        <srccurr>ground condition</srccurr>
+      </srctime>
+      <srccitea>SourceID 2</srccitea>
+      <srccontr>Red Earth, 1997 project holes</srccontr>
+    </srcinfo>
+    <srcinfo>
+      <srccite>
+        <citeinfo>
+          <origin>Alberta Energy and Utilities Board</origin>
+          <origin>Alberta Geological Survey</origin>
+          <origin>Pawlowicz, J.G.</origin>
+          <origin>Meeks, J.O.</origin>
+          <origin>Fenton, M.M.</origin>
+          <pubdate>19981209</pubdate>
+          <title>Auger Core Descriptions, 1998 Drilling, Peerless Lake Map Sheet (NTS 84B), North-Central Alberta</title>
+          <edition>1.1</edition>
+          <geoform>document</geoform>
+          <serinfo>
+            <sername>Open File Report</sername>
+            <issue>OFR 1998-09</issue>
+          </serinfo>
+          <pubinfo>
+            <pubplace>Edmonton, Alberta, Canada</pubplace>
+            <publish>Alberta Energy and Utilities Board</publish>
+          </pubinfo>
+        </citeinfo>
+      </srccite>
+      <srcscale>0</srcscale>
+      <typesrc>online</typesrc>
+      <srctime>
+        <timeinfo>
+          <sngdate>
+            <caldate>1998</caldate>
+          </sngdate>
+        </timeinfo>
+        <srccurr>ground condition</srccurr>
+      </srctime>
+      <srccitea>SourceID 7</srccitea>
+      <srccontr>Wabasca, 1998 project holes</srccontr>
+    </srcinfo>
+    <srcinfo>
+      <srccite>
+        <citeinfo>
+          <origin>Alberta Energy and Utilities Board</origin>
+          <origin>Alberta Geological Survey</origin>
+          <origin>Pawlowicz, J.G.</origin>
+          <origin>Fenton, M.M.</origin>
+          <origin>Weiss, J.A.</origin>
+          <pubdate>2005</pubdate>
+          <title>Auger Core Lithologs, Sawn Lake area, Southern Buffalo Head Hills, Alberta</title>
+          <geoform>document</geoform>
+          <serinfo>
+            <sername>Geo-Note</sername>
+            <issue>GEO 2005-07</issue>
+          </serinfo>
+          <pubinfo>
+            <pubplace>Edmonton, Alberta, Canada</pubplace>
+            <publish>Alberta Energy and Utilities Board</publish>
+          </pubinfo>
+        </citeinfo>
+      </srccite>
+      <srcscale>0</srcscale>
+      <typesrc>online</typesrc>
+      <srctime>
+        <timeinfo>
+          <sngdate>
+            <caldate>2002</caldate>
+          </sngdate>
+        </timeinfo>
+        <srccurr>ground condition</srccurr>
+      </srctime>
+      <srccitea>Source ID 3</srccitea>
+      <srccontr>Buffalo Head Hills/Sawn Lake, 2002 project holes</srccontr>
+    </srcinfo>
+    <procstep>
+      <procdesc>Two source data types were processed:
+1. Unpublished, paper files: Source data included paper borehole logs and maps on file with AGS staff. Logs were scanned to PDF and named according to borehole number on the log, with prefix "Litholog_". 
+2. Logs previously published in PDF format: The following SourceIDs have been previously published by AGS or other journals: 2, 3, 4, 5, 7, 58. Individual logs were saved to PDF and named according to borehole number on the log, with prefix "Litholog_".</procdesc>
+      <procdate>2010</procdate>
+    </procstep>
+    <procstep>
+      <procdesc>Some borehole data had been digitized before the start of this project for use in other AGS studies. Borehole locations not already in digital format were compiled in ArcGIS from scanned maps, georeferenced using the digital provincial township fabric as a base. In many cases the maps showing hole locations are inaccurate at larger scales, which results in holes plotting in the middle of cultivated fields. In such unlikely cases hole positions were refined by manually placing them at the nearest road intersection, which is logically where a drill rig would have been sited. We also used SPOT 2008 imagery as a backdrop in ArcGIS to better place the hole within an LSD or quarter section. Borehole attribute information was compiled in Excel and loaded into MS Access.</procdesc>
+      <procdate>2010</procdate>
+    </procstep>
+    <procstep>
+      <procdesc> Descriptive data of geologic intervals were typed into MS Excel, then uploaded to MS Access. Data were checked and corrected where necessary by plotting strip logs of the interval data using ViewLog software.</procdesc>
+      <procdate>2012</procdate>
+    </procstep>
+  </lineage>
+</dataqual>
+<spdoinfo>
+  <direct>Point</direct>
+  <ptvctinf>
+    <sdtsterm>
+      <sdtstype>Point</sdtstype>
+      <ptvctcnt>266</ptvctcnt>
+    </sdtsterm>
+  </ptvctinf>
+</spdoinfo>
+<spref>
+  <horizsys>
+    <geograph>
+      <latres>0.00001</latres>
+      <longres>0.00001</longres>
+      <geogunit>Decimal Degrees</geogunit>
+    </geograph>
+    <geodetic>
+      <horizdn>D North American 1983</horizdn>
+      <ellips>GRS 1980</ellips>
+      <semiaxis>6378137.0</semiaxis>
+      <denflat>298.257222101</denflat>
+    </geodetic>
+  </horizsys>
+  <vertdef>
+    <altsys>
+      <altdatum>Canadian Geodetic Vertical Datum of 1928</altdatum>
+      <alters>10</alters>
+      <altunits>metres</altunits>
+      <altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+    </altsys>
+  </vertdef>
+</spref>
+<eainfo>
+  <detailed>
+    <enttyp>
+      <enttypl>Boreholes.txt</enttypl>
+      <enttypd></enttypd>
+This table contains borehole descriptive information, including its location. Primary key comprises fields 'Name' and 'Source_ID'.
+      <enttypds>Alberta Geological Survey</enttypds>
+    </enttyp>
+    <attr>
+      <attrlabl>Name</attrlabl>
+      <attrdef>Name of the borehole on the log. Part of primary key, with &apos;Source_ID&apos;.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Source_ID</attrlabl>
+      <attrdef>Foreign key to Source table. Part of primary key, with &apos;Name&apos;.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Alias1</attrlabl>
+      <attrdef>Alternate identifier for hole. See &apos;Comment&apos; field for source.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Date_Drilled</attrlabl>
+      <attrdef>Start date of drilling, in YYYYMMDD format.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Depth_Reference</attrlabl>
+      <attrdef>Reference point for the depths cited on the log.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>El_DR_masl</attrlabl>
+      <attrdef></attrdef>
+Elevation of 'Depth_reference', in metres above sea level (Canadian Geodetic Vertical Datum 1928). [m]
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>260.3</rdommin>
+          <rdommax>1182</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Elev_Method</attrlabl>
+      <attrdef>Means by which &apos;El_DR_masl&apos; was determined.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Total_Depth_m</attrlabl>
+      <attrdef>Total depth drilled in metres. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>1.77</rdommin>
+          <rdommax>151.18</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>E_10TM83</attrlabl>
+      <attrdef>Easting, 10 TM, NAD 83 datum. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>326627</rdommin>
+          <rdommax>856585</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>N_10TM83</attrlabl>
+      <attrdef>Northing, 10 TM, NAD 83 datum. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>5439344</rdommin>
+          <rdommax>6529148</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Lat_NAD83</attrlabl>
+      <attrdef>Latitude of borehole at ground surface, NAD 83 datum. [decimal degrees]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>49.02432019772</rdommin>
+          <rdommax>58.901823</rdommax>
+          <attrunit>decimal degrees</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Long_NAD83</attrlabl>
+      <attrdef>Longitude of borehole at ground surface, NAD 83 datum. [decimal degrees]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>-117.92444286552</rdommin>
+          <rdommax>-110.06760950038</rdommax>
+          <attrunit>decimal degrees</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Source_CRS</attrlabl>
+      <attrdef>Coordinate reference system cited on or inferred from the log.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Drilling_Company</attrlabl>
+      <attrdef>Name of drilling company or rig owner, if known.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Drilling_Method</attrlabl>
+      <attrdef>Drilling method.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Driller</attrlabl>
+      <attrdef>Name of the person who operated the drill.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Logger</attrlabl>
+      <attrdef>Name of the person who logged the hole, if known.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Owner</attrlabl>
+      <attrdef>Name of the organization that commissioned the hole.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Well_Presence</attrlabl>
+      <attrdef>Whether or not a well of any kind was installed in the hole.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Spatial_Precision</attrlabl>
+      <attrdef>Compiler&apos;s estimate of georeferencing error of hole location (+/- metres). [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>25</rdommin>
+          <rdommax>400</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Georef</attrlabl>
+      <attrdef>Means by which original borehole coordinates (in x-y space) were determined.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Folder</attrlabl>
+      <attrdef>Directory location of the PDF files.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>LogPDF</attrlabl>
+      <attrdef>Name of the scanned borehole log file, in PDF (Portable Document Format) format.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Purpose</attrlabl>
+      <attrdef>Keywords indicating the purpose of the borehole.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Comment</attrlabl>
+      <attrdef>Data compiler&apos;s comment.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+  </detailed>
+  <detailed>
+    <enttyp>
+      <enttypl>Intervals.txt</enttypl>
+      <enttypd>Contains horizon/interval geological descriptions related to AGS boreholes.</enttypd>
+      <enttypds>Alberta Geological Survey</enttypds>
+    </enttyp>
+    <attr>
+      <attrlabl>Borehole_Name</attrlabl>
+      <attrdef>Unique identifier for hole. Foreign key to Borehole table (PK).</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Source_ID</attrlabl>
+      <attrdef>Foreign key to Source table (PK).</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>From_Depth</attrlabl>
+      <attrdef>Upper bound of drilled interval, original units as given in &apos;Depth_Units&apos;.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0</rdommin>
+          <rdommax>408</rdommax>
+          <attrunit>See &apos;Depth_Units&apos; field.</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>To_Depth</attrlabl>
+      <attrdef>Lower bound of drilled interval, original units as given in &apos;Depth_Units&apos;.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0.5</rdommin>
+          <rdommax>416</rdommax>
+          <attrunit>See &apos;Depth_Units&apos; field.</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Depth_Units</attrlabl>
+      <attrdef>Depth units, original. Either feet or metres.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>From_Depth_mbgs</attrlabl>
+      <attrdef>Upper bound of drilled interval in metres below ground surface. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0</rdommin>
+          <rdommax>146.1</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>To_Depth_mbgs</attrlabl>
+      <attrdef>Lower bound of drilled interval in metres below ground surface. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0.02</rdommin>
+          <rdommax>148.3</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Int_Top_Depth</attrlabl>
+      <attrdef>Depth to the top of the described interval in metres below ground surface (PK). [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0</rdommin>
+          <rdommax>146.1</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Int_Bot_Depth</attrlabl>
+      <attrdef>Depth to the bottom of the described interval in metres below ground surface. [m]</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <rdom>
+          <rdommin>0.02</rdommin>
+          <rdommax>148.3</rdommax>
+          <attrunit>m</attrunit>
+        </rdom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Pri_Material</attrlabl>
+      <attrdef>Primary lithologic material classification, i.e. the dominant constituent.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Sec_Material</attrlabl>
+      <attrdef>Secondary lithologic material.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Colour</attrlabl>
+      <attrdef>Colour of the lithologic material, if noted.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Full_Text</attrlabl>
+      <attrdef>Verbatim description of the interval as written on the original log.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Comment</attrlabl>
+      <attrdef>Compiler&apos;s comments.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+  </detailed>
+  <detailed>
+    <enttyp>
+      <enttypl>Sources.txt</enttypl>
+      <enttypd></enttypd>
+This table contains full citation details of the compiled data source, if published. It gives a brief description of the nature of the work and who was involved.
+      <enttypds>Alberta Geological Survey</enttypds>
+    </enttyp>
+    <attr>
+      <attrlabl>ID</attrlabl>
+      <attrdef>Primary key</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Name</attrlabl>
+      <attrdef>Brief identifier for the set</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Project_Desc</attrlabl>
+      <attrdef>A brief description of the project for which the data were collected.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Key_Persons</attrlabl>
+      <attrdef>Key staff on the project</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Study_Keywords</attrlabl>
+      <attrdef>Nature of the study</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Prev_Published</attrlabl>
+      <attrdef>Have logs been published before?</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Num_Points</attrlabl>
+      <attrdef>Number of boreholes in the set</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Author</attrlabl>
+      <attrdef>If published source, author&apos;s name. If blank, data are from unpublished AGS material.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Year</attrlabl>
+      <attrdef>If published source, year of publication. If blank, data are from unpublished AGS material.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Title</attrlabl>
+      <attrdef>If published source, title of publication. If blank, data are from unpublished AGS material.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Publisher</attrlabl>
+      <attrdef>If published source, publisher. If blank, data are from unpublished AGS material.</attrdef>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+    <attr>
+      <attrlabl>Other</attrlabl>
+      <attrdef></attrdef>
+If published source, other citation details such as volume, number of pages, etc. If blank, data are from unpublished AGS material.
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdomv>
+        <udom>Values do not exist in a known, predefined set.</udom>
+      </attrdomv>
+    </attr>
+  </detailed>
+  <overview>
+    <eaover></eaover>
+This section documents three related tables and their attributes. There is a one-to-many relationship between the Sources.txt table and Boreholes.txt table, and a one-to-many relationship between the Boreholes.txt table and the Intervals.txt table. Primary keys (PK) and foreign keys (FK) on the tables are indicated in their respective field descriptions.
+  </overview>
+</eainfo>
+<distinfo>
+  <distrib>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </distrib>
+  <distliab>The Alberta Energy Regulator/Alberta Geological Survey (AER/AGS) licenses this information under the Open Government License - Alberta. Any references to proprietary software in our documentation, and/or any use of proprietary data formats in our releases, do not constitute endorsement by the AER/AGS of any manufacturer&apos;s product.</distliab>
+</distinfo>
+<metainfo>
+  <metd>20140605</metd>
+  <metc>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </metc>
+  <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+  <metstdv>FGDC-STD-001-1998</metstdv>
+  <mettc>local time</mettc>
+  <metac>none</metac>
+  <metuc>none</metuc>
+</metainfo>
+</metadata>

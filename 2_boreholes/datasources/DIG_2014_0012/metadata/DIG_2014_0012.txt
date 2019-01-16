@@ -1,0 +1,733 @@
+Identification Information: 
+  Citation: 
+    Citation Information: 
+      Originator: Alberta Energy Regulator
+      Originator: Alberta Geological Survey
+      Publication Date: 2014
+      Title: Compilation of Alberta Geological Survey Borehole Data (tabular data, tab delimited format)
+      Geospatial Data Presentation Form: tabular digital data
+      Series Information: 
+        Series Name: Digital Data
+        Issue Identification: DIG 2014-0012
+      Publication Information: 
+        Publication Place: Edmonton, Alberta, Canada
+        Publisher: Alberta Geological Survey
+      Other Citation Details: Compiled by E.J. Waters and L.D. Andriashek.
+      Online Linkage: http://www.ags.gov.ab.ca/publications/DIG/ZIP/DIG_2014_0012.zip
+  Description: 
+    Abstract: Since its inception in 1920, the Alberta Geological Survey (AGS) has drilled several thousand boreholes across the province. Most were drilled only into the unconsolidated sediments overlying the top of bedrock. In 2010, AGS staff began a project to systematically compile all of the borehole log information into a database. This Digital Data product and its companion Open File Report, OFR 2014-06 are the interim results of this initiative.
+The dataset comprises three tables: Sources.txt, Boreholes.txt and Intervals.txt, as well as metadata. The Sources table gives summary information about the AGS project for which each borehole was drilled. The Boreholes table gives summary information about each borehole, such as location, drilling method, date, and total depth of the hole. The Intervals table gives descriptive geological information about each distinct geological horizon encountered in the borehole, including lithology and colour of the material. The tables have primary keys on them so they may be loaded into a relational database, GIS system, or geological modelling program. This dataset is an interim release of 266 boreholes.
+    Purpose: For computer display, query and modelling of AGS borehole data.
+    Supplemental Information: Language: In English;
+  Time Period of Content: 
+    Time Period Information: 
+      Range of Dates/Times: 
+        Beginning Date: 1964
+        Ending Date: 2002
+    Currentness Reference: ground condition
+  Status: 
+    Progress: Complete
+    Maintenance and Update Frequency: Irregular
+  Spatial Domain: 
+    Bounding Coordinates: 
+      West Bounding Coordinate: -120
+      East Bounding Coordinate: -110
+      North Bounding Coordinate: 60
+      South Bounding Coordinate: 49
+  Keywords: 
+    Theme: 
+      Theme Keyword Thesaurus: none
+      Theme Keyword: boreholes
+      Theme Keyword: geology
+      Theme Keyword: surficial
+    Place: 
+      Place Keyword Thesaurus: none
+      Place Keyword: 72e
+      Place Keyword: 72l
+      Place Keyword: 72m
+      Place Keyword: 73d
+      Place Keyword: 73e
+      Place Keyword: 73l
+      Place Keyword: 73m
+      Place Keyword: 74d
+      Place Keyword: 74e
+      Place Keyword: 74l
+      Place Keyword: 74m
+      Place Keyword: 82g
+      Place Keyword: 82h
+      Place Keyword: 82i
+      Place Keyword: 82j
+      Place Keyword: 82n
+      Place Keyword: 82o
+      Place Keyword: 82p
+      Place Keyword: 83a
+      Place Keyword: 83b
+      Place Keyword: 83c
+      Place Keyword: 83d
+      Place Keyword: 83e
+      Place Keyword: 83f
+      Place Keyword: 83g
+      Place Keyword: 83h
+      Place Keyword: 83i
+      Place Keyword: 83j
+      Place Keyword: 83k
+      Place Keyword: 83l
+      Place Keyword: 83m
+      Place Keyword: 83n
+      Place Keyword: 83o
+      Place Keyword: 83p
+      Place Keyword: 84a
+      Place Keyword: 84b
+      Place Keyword: 84c
+      Place Keyword: 84d
+      Place Keyword: 84e
+      Place Keyword: 84f
+      Place Keyword: 84g
+      Place Keyword: 84h
+      Place Keyword: 84i
+      Place Keyword: 84j
+      Place Keyword: 84k
+      Place Keyword: 84l
+      Place Keyword: 84m
+      Place Keyword: 84n
+      Place Keyword: 84o
+      Place Keyword: 84p
+      Place Keyword: alberta
+      Place Keyword: buffalo head hills
+      Place Keyword: calling lake
+      Place Keyword: canada
+      Place Keyword: fort mcmurray
+      Place Keyword: high level
+      Place Keyword: peace river
+      Place Keyword: peerless lake
+      Place Keyword: pelican river
+      Place Keyword: red earth
+      Place Keyword: wabasca
+  Access Constraints: Public
+  Use Constraints: Acknowledgement of the Alberta Energy Regulator/Alberta Geological Survey as the originator/source of this information is required as described in the Open Government License - Alberta.
+  Point of Contact: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Data Set Credit: E.J. Waters
+  Cross Reference: 
+    Citation Information: 
+      Originator: Alberta Energy Regulator
+      Originator: Alberta Geological Survey
+      Originator: Waters, E.J.
+      Originator: Andriashek, L.D.
+      Publication Date: 2014
+      Title: Compilation of Boreholes Drilled or Logged by the Alberta Geological Survey
+      Geospatial Data Presentation Form: document
+      Series Information: 
+        Series Name: Open File Report
+        Issue Identification: OFR 2014-06
+      Publication Information: 
+        Publication Place: Edmonton, Alberta, Canada
+        Publisher: Alberta Geological Survey
+      Other Citation Details: ISBN: 978-1-4601-0130-8
+      Online Linkage: http://www.ags.gov.ab.ca/publications
+Data Quality Information: 
+  Attribute Accuracy: 
+    Attribute Accuracy Report: Attribute values were checked periodically during the digitization process using query tools in MS Access, by spell-checking in MS Excel, and visual inspection of check plots of strip logs produced using ViewLog software. Where possible, constraints were placed on attribute domains to minimize digitizing errors.
+  Logical Consistency Report: This is a compilation of data from many project sources. Project areas may overlap. Only boreholes that could be located with confidence are included in this dataset, including holes re-drilled at a given location because of drilling difficulties. No attempt has been made to standardize attribute values within and among project datasets. Log data are the observations of many different geologists over many decades.
+  Completeness Report: These data comprise approximately 3.5% of the total number of holes drilled by the AGS since 1920. We intend to publish further sets as we complete the digitization of the remaining holes.
+  Positional Accuracy: 
+    Horizontal Positional Accuracy: 
+      Horizontal Positional Accuracy Report: Location accuracy of holes varies widely throughout this dataset, ranging from +/- 25 - 400 m. Each hole is tagged with the compiler's estimate of its positional precision, as values in the Boreholes table's [Spatial_Precision] field.
+    Vertical Positional Accuracy: 
+      Vertical Positional Accuracy Report: There are many sources of uncertainty associated with depth accuracy of borehole data and a full discussion is beyond the scope of this document. Depth accuracy is a function of drilling method, sampling/drilling interval size, and experience and judgement of the logging geologist. Most of the interval data in this data set is recorded as it appears on the original log with the following exceptions. In instances where the amount of core recovered is greater or less than the drilled depth, adjustments were made to described interval top and bottom depths. This adjustment was made to intervals of data source IDs 2, 3, 4, 5, 6, 7, 33 and 36.
+  Lineage: 
+    Source Information: 
+      Source Citation: 
+        Citation Information: 
+          Originator: Alberta Energy and Utilities Board
+          Originator: Alberta Geological Survey
+          Originator: Pawlowicz, J.G.
+          Originator: Jean, G.M.
+          Originator: Fenton, M.M.
+          Publication Date: 19960131
+          Title: Preliminary Stratigraphic Tests to Support Mineral Exploration: Northern Alberta
+          Geospatial Data Presentation Form: document
+          Series Information: 
+            Series Name: Open File Report
+            Issue Identification: OFR 1995-11
+          Publication Information: 
+            Publication Place: Edmonton, Alberta, Canada
+            Publisher: Alberta Energy and Utilities Board
+      Source Scale Denominator: 0
+      Type of Source Media: online
+      Source Time Period of Content: 
+        Time Period Information: 
+          Single Date/Time: 
+            Calendar Date: 1995
+        Source Currentness Reference: ground condition
+      Source Citation Abbreviation: SourceID 5
+      Source Contribution: Peace River, 1995 project holes
+    Source Information: 
+      Source Citation: 
+        Citation Information: 
+          Originator: Alberta Energy and Utilities Board
+          Originator: Alberta Geological Survey
+          Originator: Fenton, M.M.
+          Originator: Pawlowicz, J.G.
+          Publication Date: 1998
+          Title: Reconnaissance Till Mineral and Geochemical Survey with Emphasis on Northern Alberta; Project Final Report
+          Geospatial Data Presentation Form: document
+          Series Information: 
+            Series Name: Open File Report
+            Issue Identification: OFR 1996-07
+          Publication Information: 
+            Publication Place: Edmonton, Alberta, Canada
+            Publisher: Alberta Energy and Utilities Board
+      Source Scale Denominator: 0
+      Type of Source Media: online
+      Source Time Period of Content: 
+        Time Period Information: 
+          Single Date/Time: 
+            Calendar Date: 1993
+        Source Currentness Reference: ground condition
+      Source Citation Abbreviation: SourceID 4
+      Source Contribution: High Level, 1993 project holes
+    Source Information: 
+      Source Citation: 
+        Citation Information: 
+          Originator: Alberta Energy and Utilities Board
+          Originator: Alberta Geological Survey
+          Originator: Pawlowicz, J.G.
+          Originator: Fenton, M.M.
+          Publication Date: 19980403
+          Title: Auger Core Lithologs from the Wabasca/Red Earth Area, North-Central Alberta
+          Geospatial Data Presentation Form: document
+          Series Information: 
+            Series Name: Open File Report
+            Issue Identification: OFR 1998-03
+          Publication Information: 
+            Publication Place: Edmonton, Alberta, Canada
+            Publisher: Alberta Energy and Utilities Board
+      Source Scale Denominator: 0
+      Type of Source Media: online
+      Source Time Period of Content: 
+        Time Period Information: 
+          Single Date/Time: 
+            Calendar Date: 1997
+        Source Currentness Reference: ground condition
+      Source Citation Abbreviation: SourceID 2
+      Source Contribution: Red Earth, 1997 project holes
+    Source Information: 
+      Source Citation: 
+        Citation Information: 
+          Originator: Alberta Energy and Utilities Board
+          Originator: Alberta Geological Survey
+          Originator: Pawlowicz, J.G.
+          Originator: Meeks, J.O.
+          Originator: Fenton, M.M.
+          Publication Date: 19981209
+          Title: Auger Core Descriptions, 1998 Drilling, Peerless Lake Map Sheet (NTS 84B), North-Central Alberta
+          Edition: 1.1
+          Geospatial Data Presentation Form: document
+          Series Information: 
+            Series Name: Open File Report
+            Issue Identification: OFR 1998-09
+          Publication Information: 
+            Publication Place: Edmonton, Alberta, Canada
+            Publisher: Alberta Energy and Utilities Board
+      Source Scale Denominator: 0
+      Type of Source Media: online
+      Source Time Period of Content: 
+        Time Period Information: 
+          Single Date/Time: 
+            Calendar Date: 1998
+        Source Currentness Reference: ground condition
+      Source Citation Abbreviation: SourceID 7
+      Source Contribution: Wabasca, 1998 project holes
+    Source Information: 
+      Source Citation: 
+        Citation Information: 
+          Originator: Alberta Energy and Utilities Board
+          Originator: Alberta Geological Survey
+          Originator: Pawlowicz, J.G.
+          Originator: Fenton, M.M.
+          Originator: Weiss, J.A.
+          Publication Date: 2005
+          Title: Auger Core Lithologs, Sawn Lake area, Southern Buffalo Head Hills, Alberta
+          Geospatial Data Presentation Form: document
+          Series Information: 
+            Series Name: Geo-Note
+            Issue Identification: GEO 2005-07
+          Publication Information: 
+            Publication Place: Edmonton, Alberta, Canada
+            Publisher: Alberta Energy and Utilities Board
+      Source Scale Denominator: 0
+      Type of Source Media: online
+      Source Time Period of Content: 
+        Time Period Information: 
+          Single Date/Time: 
+            Calendar Date: 2002
+        Source Currentness Reference: ground condition
+      Source Citation Abbreviation: Source ID 3
+      Source Contribution: Buffalo Head Hills/Sawn Lake, 2002 project holes
+    Process Step: 
+      Process Description: Two source data types were processed:
+1. Unpublished, paper files: Source data included paper borehole logs and maps on file with AGS staff. Logs were scanned to PDF and named according to borehole number on the log, with prefix "Litholog_". 
+2. Logs previously published in PDF format: The following SourceIDs have been previously published by AGS or other journals: 2, 3, 4, 5, 7, 58. Individual logs were saved to PDF and named according to borehole number on the log, with prefix "Litholog_".
+      Process Date: 2010
+    Process Step: 
+      Process Description: Some borehole data had been digitized before the start of this project for use in other AGS studies. Borehole locations not already in digital format were compiled in ArcGIS from scanned maps, georeferenced using the digital provincial township fabric as a base. In many cases the maps showing hole locations are inaccurate at larger scales, which results in holes plotting in the middle of cultivated fields. In such unlikely cases hole positions were refined by manually placing them at the nearest road intersection, which is logically where a drill rig would have been sited. We also used SPOT 2008 imagery as a backdrop in ArcGIS to better place the hole within an LSD or quarter section. Borehole attribute information was compiled in Excel and loaded into MS Access.
+      Process Date: 2010
+    Process Step: 
+      Process Description:  Descriptive data of geologic intervals were typed into MS Excel, then uploaded to MS Access. Data were checked and corrected where necessary by plotting strip logs of the interval data using ViewLog software.
+      Process Date: 2012
+Spatial Data Organization Information: 
+  Direct Spatial Reference Method: Point
+  Point and Vector Object Information: 
+    SDTS Terms Description: 
+      SDTS Point and Vector Object Type: Point
+      Point and Vector Object Count: 266
+Spatial Reference Information: 
+  Horizontal Coordinate System Definition: 
+    Geographic: 
+      Latitude Resolution: 0.00001
+      Longitude Resolution: 0.00001
+      Geographic Coordinate Units: Decimal Degrees
+    Geodetic Model: 
+      Horizontal Datum Name: D North American 1983
+      Ellipsoid Name: GRS 1980
+      Semi-Major Axis: 6378137.0
+      Denominator of Flattening Ratio: 298.257222101
+  Vertical Coordinate System Definition: 
+    Altitude System Definition: 
+      Altitude Datum Name: Canadian Geodetic Vertical Datum of 1928
+      Altitude Resolution: 10
+      Altitude Distance Units: metres
+      Altitude Encoding Method: Explicit elevation coordinate included with horizontal coordinates
+Entity and Attribute Information: 
+  Detailed Description: 
+    Entity Type: 
+      Entity Type Label: Boreholes.txt
+      Entity Type Definition: 
+This table contains borehole descriptive information, including its location. Primary key comprises fields 'Name' and 'Source_ID'.
+      Entity Type Definition Source: Alberta Geological Survey
+    Attribute: 
+      Attribute Label: Name
+      Attribute Definition: Name of the borehole on the log. Part of primary key, with 'Source_ID'.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Source_ID
+      Attribute Definition: Foreign key to Source table. Part of primary key, with 'Name'.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Alias1
+      Attribute Definition: Alternate identifier for hole. See 'Comment' field for source.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Date_Drilled
+      Attribute Definition: Start date of drilling, in YYYYMMDD format.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Depth_Reference
+      Attribute Definition: Reference point for the depths cited on the log.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: El_DR_masl
+      Attribute Definition: 
+Elevation of 'Depth_reference', in metres above sea level (Canadian Geodetic Vertical Datum 1928). [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 260.3
+          Range Domain Maximum: 1182
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Elev_Method
+      Attribute Definition: Means by which 'El_DR_masl' was determined.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Total_Depth_m
+      Attribute Definition: Total depth drilled in metres. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 1.77
+          Range Domain Maximum: 151.18
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: E_10TM83
+      Attribute Definition: Easting, 10 TM, NAD 83 datum. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 326627
+          Range Domain Maximum: 856585
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: N_10TM83
+      Attribute Definition: Northing, 10 TM, NAD 83 datum. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 5439344
+          Range Domain Maximum: 6529148
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Lat_NAD83
+      Attribute Definition: Latitude of borehole at ground surface, NAD 83 datum. [decimal degrees]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 49.02432019772
+          Range Domain Maximum: 58.901823
+          Attribute Units of Measure: decimal degrees
+    Attribute: 
+      Attribute Label: Long_NAD83
+      Attribute Definition: Longitude of borehole at ground surface, NAD 83 datum. [decimal degrees]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: -117.92444286552
+          Range Domain Maximum: -110.06760950038
+          Attribute Units of Measure: decimal degrees
+    Attribute: 
+      Attribute Label: Source_CRS
+      Attribute Definition: Coordinate reference system cited on or inferred from the log.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Drilling_Company
+      Attribute Definition: Name of drilling company or rig owner, if known.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Drilling_Method
+      Attribute Definition: Drilling method.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Driller
+      Attribute Definition: Name of the person who operated the drill.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Logger
+      Attribute Definition: Name of the person who logged the hole, if known.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Owner
+      Attribute Definition: Name of the organization that commissioned the hole.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Well_Presence
+      Attribute Definition: Whether or not a well of any kind was installed in the hole.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Spatial_Precision
+      Attribute Definition: Compiler's estimate of georeferencing error of hole location (+/- metres). [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 25
+          Range Domain Maximum: 400
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Georef
+      Attribute Definition: Means by which original borehole coordinates (in x-y space) were determined.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Folder
+      Attribute Definition: Directory location of the PDF files.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: LogPDF
+      Attribute Definition: Name of the scanned borehole log file, in PDF (Portable Document Format) format.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Purpose
+      Attribute Definition: Keywords indicating the purpose of the borehole.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Comment
+      Attribute Definition: Data compiler's comment.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+  Detailed Description: 
+    Entity Type: 
+      Entity Type Label: Intervals.txt
+      Entity Type Definition: Contains horizon/interval geological descriptions related to AGS boreholes.
+      Entity Type Definition Source: Alberta Geological Survey
+    Attribute: 
+      Attribute Label: Borehole_Name
+      Attribute Definition: Unique identifier for hole. Foreign key to Borehole table (PK).
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Source_ID
+      Attribute Definition: Foreign key to Source table (PK).
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: From_Depth
+      Attribute Definition: Upper bound of drilled interval, original units as given in 'Depth_Units'.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0
+          Range Domain Maximum: 408
+          Attribute Units of Measure: See 'Depth_Units' field.
+    Attribute: 
+      Attribute Label: To_Depth
+      Attribute Definition: Lower bound of drilled interval, original units as given in 'Depth_Units'.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0.5
+          Range Domain Maximum: 416
+          Attribute Units of Measure: See 'Depth_Units' field.
+    Attribute: 
+      Attribute Label: Depth_Units
+      Attribute Definition: Depth units, original. Either feet or metres.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: From_Depth_mbgs
+      Attribute Definition: Upper bound of drilled interval in metres below ground surface. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0
+          Range Domain Maximum: 146.1
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: To_Depth_mbgs
+      Attribute Definition: Lower bound of drilled interval in metres below ground surface. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0.02
+          Range Domain Maximum: 148.3
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Int_Top_Depth
+      Attribute Definition: Depth to the top of the described interval in metres below ground surface (PK). [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0
+          Range Domain Maximum: 146.1
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Int_Bot_Depth
+      Attribute Definition: Depth to the bottom of the described interval in metres below ground surface. [m]
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Range Domain: 
+          Range Domain Minimum: 0.02
+          Range Domain Maximum: 148.3
+          Attribute Units of Measure: m
+    Attribute: 
+      Attribute Label: Pri_Material
+      Attribute Definition: Primary lithologic material classification, i.e. the dominant constituent.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Sec_Material
+      Attribute Definition: Secondary lithologic material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Colour
+      Attribute Definition: Colour of the lithologic material, if noted.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Full_Text
+      Attribute Definition: Verbatim description of the interval as written on the original log.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Comment
+      Attribute Definition: Compiler's comments.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+  Detailed Description: 
+    Entity Type: 
+      Entity Type Label: Sources.txt
+      Entity Type Definition: 
+This table contains full citation details of the compiled data source, if published. It gives a brief description of the nature of the work and who was involved.
+      Entity Type Definition Source: Alberta Geological Survey
+    Attribute: 
+      Attribute Label: ID
+      Attribute Definition: Primary key
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Name
+      Attribute Definition: Brief identifier for the set
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Project_Desc
+      Attribute Definition: A brief description of the project for which the data were collected.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Key_Persons
+      Attribute Definition: Key staff on the project
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Study_Keywords
+      Attribute Definition: Nature of the study
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Prev_Published
+      Attribute Definition: Have logs been published before?
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Num_Points
+      Attribute Definition: Number of boreholes in the set
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Author
+      Attribute Definition: If published source, author's name. If blank, data are from unpublished AGS material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Year
+      Attribute Definition: If published source, year of publication. If blank, data are from unpublished AGS material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Title
+      Attribute Definition: If published source, title of publication. If blank, data are from unpublished AGS material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Publisher
+      Attribute Definition: If published source, publisher. If blank, data are from unpublished AGS material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+    Attribute: 
+      Attribute Label: Other
+      Attribute Definition: 
+If published source, other citation details such as volume, number of pages, etc. If blank, data are from unpublished AGS material.
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Domain Values: 
+        Unrepresentable Domain: Values do not exist in a known, predefined set.
+  Overview Description: 
+    Entity and Attribute Overview: 
+This section documents three related tables and their attributes. There is a one-to-many relationship between the Sources.txt table and Boreholes.txt table, and a one-to-many relationship between the Boreholes.txt table and the Intervals.txt table. Primary keys (PK) and foreign keys (FK) on the tables are indicated in their respective field descriptions.
+Distribution Information: 
+  Distributor: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Distribution Liability: The Alberta Energy Regulator/Alberta Geological Survey (AER/AGS) licenses this information under the Open Government License - Alberta. Any references to proprietary software in our documentation, and/or any use of proprietary data formats in our releases, do not constitute endorsement by the AER/AGS of any manufacturer's product.
+Metadata Reference Information: 
+  Metadata Date: 20140605
+  Metadata Contact: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Metadata Standard Name: FGDC Content Standard for Digital Geospatial Metadata
+  Metadata Standard Version: FGDC-STD-001-1998
+  Metadata Time Convention: local time
+  Metadata Access Constraints: none
+  Metadata Use Constraints: none

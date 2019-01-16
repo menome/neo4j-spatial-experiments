@@ -1,1 +1,0 @@
-java -Xms1280m -Xmx1280m -cp "target/osm-0.2.2-neo4j-3.4.9-procedures.jar:target/dependency/*" org.neo4j.gis.osm.OSMImportTool --skip-duplicate-nodes --delete --into target/datasources/calgary.osm.bz2
