@@ -41,7 +41,7 @@ MERGE (collar:Collar{
     collar.Georef=map['Georef'],
     collar.Owner=map['Owner'],
     collar.Well_Presence=map['Well_Presence'],
-    collar.Location=point({x: toFloat(map['Lat_NAD83']), y: toFloat(map['Long_NAD83']),height:toFloat(map['El_DR_masl']), crs: 'wgs-84'})
+    collar.Location=point({x: toFloat(map['Lat_NAD83']), y: toFloat(map['Long_NAD83']),z:toFloat(map['El_DR_masl']), crs:'WGS-84-3D')
  ON MATCH SET
     collar.SourceID= map['Source_ID'],
     collar.Alias1= map['Alias1'],
@@ -63,7 +63,7 @@ MERGE (collar:Collar{
     collar.Georef=map['Georef'],
     collar.Owner=map['Owner'],
     collar.Well_Presence=map['Well_Presence'],
-    collar.Location=point({x: toFloat(map['Lat_NAD83']), y: toFloat(map['N_10TM83']),z:toFloat(map['El_DR_masl'])})
+    collar.Location=point({x: toFloat(map['Lat_NAD83']), y: toFloat(map['Long_NAD83']),z:toFloat(map['El_DR_masl']), crs:'WGS-84-3D')
 
 with map,collar
 MERGE (drillingMethod:DrillingMethod{

@@ -50,3 +50,14 @@ with c, collect(i) as intervals
 with c,intervals
 with c,intervals,intervals[0] as first
 MATCH (first)-[r:NEXT_INTERVAL]->(second) set r.Length=second.ToDepth-first.FromDepth
+
+
+// Calculate X,Y,Z point for intervals
+match (c:Collar {Name:'141'})-[r:NEXT_INTERVAL*]-(i:Interval)
+with c, i order by i.FromDepth
+with c, collect(i) as intervals 
+with c,intervals
+unwind intervals as interval
+with c,interval,c.El_DR_masl-interval.FromDepth as depth
+set interval.location=point({x: c.Lat_NAD83, y: c.Long_NAD83,z:depth, crs:'WGS-84-3D'})
+return c,interval
