@@ -130,7 +130,7 @@ return c,interval
 
 ## Visualizing the Borehole Data
 
-There are a number of ways to visulize borehole data. Log plots that show the lithology, although these typically rely on commercial softwr
+There are a number of ways to visulize borehole data. Log plots that show the lithology, although these typically rely on commercial software
 
 
 ### Visualizing using Leapfrog
