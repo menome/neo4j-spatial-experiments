@@ -6,7 +6,7 @@ While these data are available on the [Walkscore website](https://www.walkscore.
 
 I also wanted to try to visualize how a community changes over time by connecting Neo4j to the [Deck.gl](http://deck.gl/#/) visualizaiton framework. 
 
-![Deck GL](/deck.png "Logo Title Text 1")
+![Deck GL](./deck.png "Logo Title Text 1")
 
 # Walkscore Data Example: 
 
