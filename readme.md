@@ -18,5 +18,10 @@ The first experiement was to take Open Street Map data and see if I could constr
 
 The Walk Score example is documented and stored in 1_walkscore directory. A further experiement will seek to imporve and replace the base Walk Score algorithm using Graph Techniques for calculating actual distance instead of linear distance to assess features, and will combine the Yelp ratings scores data to factor in amenity quality as part of the rank. 
 
+[Read about Walkscore Here](./1_walkscore/readme.md)
+
+![Deck GL Visualization of Amenities](./1_walkscore/deck.png)
+
 ## Experiement 2 - Subsurface data - Modelling boreholes with Neo4j
 
+Coming Soon!
