@@ -12,7 +12,7 @@ This has the potential to be incredibly powerful and very disruptive to the worl
 
 My goal with these spatial experimentes is to explore using small,focused mini-projects the range of possiblities to validate how far I can take the spatial capabilities of neo4j.
 
-## Experiement 1 - Walkscore computation using Neo4j
+## Experiment 1 - Walkscore computation using Neo4j
 
 The first experiement was to take Open Street Map data and see if I could construct a basic spatial analysis using Neo4j. For this experiement I chose to pursue replicating the Walk Score algortihm. I did this because it is a well known, published algorithm that I could validate my work against. 
 
