@@ -162,6 +162,8 @@ We will then write a Cypher query to get the relevant borehole interval informat
    )]
 ```
 
+
+
 ## Analyze and Correlate the Borehole Data in Neo4j
 
 I wanted to try as well using the graph, spatial structure, and text analytics capabilities of neo4j to determine what advantages might be derived from modelling boreholes as a graph.
