@@ -98,11 +98,11 @@ with c, i order by i.FromDepth
 with c, collect(i) as intervals 
 with c,intervals
 with c,intervals,intervals[0] as first
-MATCH (first)-[r:NEXT_INTERVAL]->(second) set r.Length=second-first
+MATCH (first)-[r:NEXT_INTERVAL]->(second) set r.Length=second.ToDepth-first.ToDepth
 with c,intervals
 unwind RANGE(0,LENGTH(intervals)-2 ) as idx
 WITH intervals[idx] AS s1, intervals[idx+1] AS s2
-MATCH (s1)-[r:NEXT_INTERVAL]->(s2) set r.Length=s2-s1 
+MATCH (s1)-[r:NEXT_INTERVAL]->(s2) set r.Length=s2.ToDepth-s1.ToDepth
 
 ```
 
@@ -130,58 +130,36 @@ return c,interval
 
 ## Visualizing the Borehole Data
 
-There are a number of ways to visulize borehole data. Log plots that show the lithology, although these typically rely on commercial software
+There are a large number of ways to visulize borehole data, although due to the specific domain associted with borehole data, these typically rely on expensive commercial software. 
 
+In this case, we will use a cloud hosted visualizing tool called [Steno3d](https://steno3d.com/). This tool has python based Jupyter notebooks, and has a free for signup version for trying it out. 
 
-### Visualizing using Steno3d
+### Visualizing Using Steno3D
 
+Steno3D is a cloud based 3D visualization platform that allows for visualization of 3d data. Its used typically for geological applications, although is not limited to that domain. 
 
-### Visualizing using Deck.GL
+For this example, we will first use an export/import process to get the data into Steno following the Wolf-Pass example they provide: [Wolf Pass](https://github.com/seequent/steno3d-notebooks/blob/master/example_wolfpass.ipynb)
 
+In order to use this example, you will need to have Python3 and Jupyter notebooks, setup and use PIP to install the Steno3d python library. You will also need to register for the Steno3d Site, and signup for a free developer key. Instructions are provided here: [Steno3d Python Client](https://python.steno3d.com/en/latest/)
 
-The geojson deck GL uses for the polygon data follows: 
+The Wolf Pass example has a 3d surface visualization associated with it, but in this case we do not have the full surface data with the open source data set, so will forgoe that for this spatial experiement. I'll have to do some more digging to see if I can find an open source data set that has a more comprehenive model associated with it in a future post. 
+
+To get the data from Neo4j, we will install and use the [Neo4j Python Driver](https://neo4j.com/developer/python/).
+
+We will then write a Cypher query to get the relevant borehole interval information into a form that works for Steno3d's line upload process as described in Wolf Pass example, and in Steno3d's documentation [Line Mesh](https://python.steno3d.com/en/latest/content/api/resources/line.html).
 
 ```
-
-{
-"type": "Feature",
-"geometry": {
-"type": "Polygon",
-"coordinates": [
-[
-[
--123.032853,
-49.2837769
-],
-[
--123.0311507,
-49.2837752
-],
-[
--123.0311523,
-49.283052
-],
-[
--123.0333653,
-49.283054
-],
-[
--123.0333638,
-49.2837772
-],
-[
--123.032853,
-49.2837769
-]
-]
-]
-},
-"properties": {
-"valuePerSqm": 1865,
-"growth": 0.3876
-}
-},
-
+>> ...
+>> my_line = steno3d.Line(...)
+>> ...
+>> my_data = steno3d.DataArray(
+       title='Six Numbers',
+       array=[0.0, 1.0, 2.0, 3.0, 4.0, 5.0]
+   )
+>> my_line.data = [dict(
+       location='N',
+       data=my_data
+   )]
 ```
 
 ## Analyze and Correlate the Borehole Data in Neo4j
