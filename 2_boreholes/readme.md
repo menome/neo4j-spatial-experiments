@@ -133,7 +133,7 @@ return c,interval
 There are a number of ways to visulize borehole data. Log plots that show the lithology, although these typically rely on commercial software
 
 
-### Visualizing using Leapfrog
+### Visualizing using Steno3d
 
 
 ### Visualizing using Deck.GL

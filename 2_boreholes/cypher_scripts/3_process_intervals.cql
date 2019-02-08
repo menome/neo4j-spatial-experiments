@@ -29,18 +29,17 @@ MERGE (s1)-[:NEXT_INTERVAL]->(s2)
 match (c:Collar)-[r:HAS_INTERVAL]->(i:Interval)
 delete r
 
-
 // Process lenth of interval onto edge
 MATCH (c:Collar)-[:NEXT_INTERVAL*]-(i:Interval) 
 with c, i order by i.FromDepth
 with c, collect(i) as intervals 
 with c,intervals
 with c,intervals,intervals[0] as first
-MATCH (first)-[r:NEXT_INTERVAL]->(second) set r.Length=second-first
+MATCH (first)-[r:NEXT_INTERVAL]->(second) set r.Length=second.ToDepth-first.ToDepth
 with c,intervals
 unwind RANGE(0,LENGTH(intervals)-2 ) as idx
 WITH intervals[idx] AS s1, intervals[idx+1] AS s2
-MATCH (s1)-[r:NEXT_INTERVAL]->(s2) set r.Length=s2-s1 
+MATCH (s1)-[r:NEXT_INTERVAL]->(s2) set r.Length=s2.ToDepth-s1.ToDepth
 
 // set interval on first node
 // Process lenth of interval onto edge
