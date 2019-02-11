@@ -116,6 +116,7 @@ drilling takes advantage of this fact by using advanced techology to actually di
 In the case of the borehole set we are working with for this demonstration which were drilled for lithology classification, the holes are fairly shallow and thus were not surveyed. We can therefore assume they are vertical, so the point calculations for the intervals are simply subtracting the depth of the interval from the collar elevation and using the same lat/long as the collar.  
 
 ```
+
 // Calculate X,Y,Z point for intervals
 match (c:Collar {Name:'141'})-[r:NEXT_INTERVAL*]-(i:Interval)
 with c, i order by i.FromDepth
@@ -149,6 +150,7 @@ To get the data from Neo4j, we will install and use the [Neo4j Python Driver](ht
 We will then write a Cypher query to get the relevant borehole interval information into a form that works for Steno3d's line upload process as described in Wolf Pass example, and in Steno3d's documentation [Line Mesh](https://python.steno3d.com/en/latest/content/api/resources/line.html).
 
 ```
+
 >> ...
 >> my_line = steno3d.Line(...)
 >> ...
