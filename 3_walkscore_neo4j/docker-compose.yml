@@ -1,0 +1,49 @@
+version: '3.7'
+services:
+  neo4j:
+    image: neo4j:3.5.3
+    container_name: walkscore
+    ports:
+      - "7474:7474"   # web interface
+      - "7687:7687"   # bolt
+    environment:
+      # in development so no authentication, make sure this is on for deploys
+      - NEO4J_AUTH=neo4j/password
+
+      # agree to license since we use enterprise edition
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+
+      # enable built in neo4j shell tooling for running cypher queries
+      - NEO4J_dbms_shell_enabled=true
+
+      # apoc configuration
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc.spatial.geocode.provider=google
+      - NEO4J_apoc.spatial.geocode.google.throttle=100
+      - NEO4J_apoc.spatial.geocode.google.key=
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*,algo.*
+      - NEO4J_dbms_security_procedures_whitelist=apoc.*,algo.*  
+      - NEO4J_dbms_memory_heap_initial__size=4G
+      - NEO4J_dbms_memory_heap_max__size=12G
+      - NEO4J_dbms_memory_pagecache_size=2G
+    volumes:
+      # add scripts and datasources
+      - ./scripts:/scripts
+      - ./datasources:/datasources 
+
+      # backup data into volume so it persists
+      - ./neo4j-data:/data  
+      - ./neo4j-plugins:/plugins
+  web:
+    build:
+      context: ./data-viz/
+    command: npm start
+    volumes:
+      - ./data-viz/:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_NEO4J_URI='http://localhost:7474'
+      - REACT_APP_NEO4J_USER='neo4j'
+      - REACT_APP_NEO4J_PASSWORD='password'
