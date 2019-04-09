@@ -2,6 +2,10 @@
 
 ## Assemble Data Sets:
 
+### Open Street Map Data
+
+We will re-use the data from the original walk score example
+
 ### Yelp data for amenities:
 
 Use the Yelp Import tool to import data: https://github.com/johnymontana/yelp-graph-algorithms/tree/3.4 

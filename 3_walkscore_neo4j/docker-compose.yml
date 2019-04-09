@@ -34,16 +34,3 @@ services:
       # backup data into volume so it persists
       - ./neo4j-data:/data  
       - ./neo4j-plugins:/plugins
-  web:
-    build:
-      context: ./data-viz/
-    command: npm start
-    volumes:
-      - ./data-viz/:/usr/app
-      - /usr/app/node_modules
-    ports:
-      - "3000:3000"
-    environment:
-      - REACT_APP_NEO4J_URI='http://localhost:7474'
-      - REACT_APP_NEO4J_USER='neo4j'
-      - REACT_APP_NEO4J_PASSWORD='password'
