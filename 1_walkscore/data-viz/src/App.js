@@ -44,7 +44,7 @@ class App extends React.Component {
   super(props)
 
   this.state = {
-    mapboxAccessToken: 'pk.eyJ1IjoibW1vcmxleSIsImEiOiJjam84d3d2bm0wMWJrM3JxazBlMXVuOWRvIn0.sl6eCJtSM28b9toThqCVVg',
+    mapboxAccessToken: 'pk.eyJ1IjoibW1vcmxleSIsImEiOiJjanViZnZ0amYwOWcwM3pxcmR0MDl5ZnF6In0.aimYvrHjLNZv7rRZCwYrcA',
     mapCenter: {
       longitude: -114.0708,
       latitude: 51.0486,
@@ -73,9 +73,9 @@ class App extends React.Component {
 
   this.driver = neo4j.driver(
     process.env.REACT_APP_NEO4J_URI,
-    neo4j.auth.basic(
-      process.env.REACT_APP_NEO4J_USER,
-      process.env.REACT_APP_NEO4J_PASSWORD
+    neo4j.auth.basic('neo4j','password'
+     // process.env.REACT_APP_NEO4J_USER,
+     // process.env.REACT_APP_NEO4J_PASSWORD
     ),
     { encrypted: true }
   )
