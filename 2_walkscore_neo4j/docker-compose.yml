@@ -2,7 +2,7 @@ version: '3.7'
 services:
   neo4j:
     image: neo4j:3.5.3
-    container_name: walkscore
+    container_name: walkscore2
     ports:
       - "7474:7474"   # web interface
       - "7687:7687"   # bolt
