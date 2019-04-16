@@ -44,7 +44,7 @@ class App extends React.Component {
   super(props)
 
   this.state = {
-    mapboxAccessToken: 'pk.eyJ1IjoibW1vcmxleSIsImEiOiJjanViZnZ0amYwOWcwM3pxcmR0MDl5ZnF6In0.aimYvrHjLNZv7rRZCwYrcA',
+    mapboxAccessToken: 'YOUR TOKEN HERE',
     mapCenter: {
       longitude: -114.0708,
       latitude: 51.0486,
