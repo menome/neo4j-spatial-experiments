@@ -63,3 +63,5 @@ typings/
 neo4j-data/
 
 .DS_Store
+.DS_Store
+1_walkscore/neo4j-data/databases/.DS_Store
