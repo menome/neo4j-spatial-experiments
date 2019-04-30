@@ -65,3 +65,28 @@ return c,interval;
 match (c:Collar )-[r:NEXT_INTERVAL*]-(i:Interval)
  set i.lat=i.location.latitude,
 i.lng=i.location.longitude,i.elev=i.location.z
+
+// Interpret Geology into Layers
+MATCH (i:Interval) where i.Pri_Material <> '?' and i.Pri_Material <> 'no data' and i.Pri_Material <> 'not indicated' and i.Pri_Material <> 'no recovery' and i.Pri_Material <> 'no sample'
+with i, 
+case 
+when lower(i.Pri_Material) contains('clay') or lower(i.Pri_Material) contains('bentonite') then 'Clay'
+when lower(i.Pri_Material) contains('boulder')  then 'Boulders'
+when lower(i.Pri_Material) contains ('till') then 'Till'
+when lower(i.Pri_Material) ends with ('sand') then 'Sand'
+when lower(i.Pri_Material) ends with ('shale') then 'Shale'
+when lower(i.Pri_Material) contains ('gravel') then 'Gravel'
+when lower(i.Pri_Material) ends with ('mudstone') then 'Mudstone'
+when lower(i.Pri_Material) contains ('bedrock') then 'Bedrock'
+when lower(i.Pri_Material) ends with ('fill') then 'Fill'
+when lower(i.Pri_Material) ends with ('silt') then 'Silt'
+when lower(i.Pri_Material) ends with ('siltstone') then 'Siltstone'
+when lower(i.Pri_Material) ends with ('pebbles') then 'Pebbles'
+when lower(i.Pri_Material) contains('rocks') or lower(i.Pri_Material) contains('stones') then 'Rocks'
+else i.Pri_Material
+
+end as layer
+set i.Layer = layer
+
+// Query back collars and valid intervals
+MATCH (c:Collar)-[:NEXT_INTERVAL*]-(i:Interval) where i.Pri_Material <> '?' and i.Pri_Material <> 'no data' and i.Pri_Material <> 'not indicated' return c,i limit 100
