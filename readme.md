@@ -61,9 +61,9 @@ For this example, we will do the first part of the process: taking the data from
 
 While Modelling geological data is a big part of the equation of developing a geological model, being able to effectively visualize and work with the geological model is crucial.
 
-We were very excited therefore when we saw what Kinviz had developed with the GraphXR tool. I reached out to the Kinviz team following the presentation they did on GraphXR in the Neo4j Developer community. 
+We were very excited therefore when we saw what [Kineviz](https://www.kineviz.com)  had developed with the GraphXR tool. I reached out to the Kineviz team following the presentation they did on GraphXR in the Neo4j Developer community. 
 
-The Kinviz team have been great to collaborate with, taking the borehole model example, and projected it into GraphXR. 
+The Kineviz team have been great to collaborate with and have taking the borehole model example, and projected it into GraphXR. 
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
 
@@ -71,4 +71,4 @@ The Kinviz team have been great to collaborate with, taking the borehole model e
 
 We will plan a follow up example as the next in our series on spatial experiements using Neo4j that will take interpreting geological data and constructing modles of the environment around us futher, so stay tuned!
 
-The Menome and Kinviz Teams.. 
+The Menome and Kineviz Teams.. 
