@@ -1,4 +1,4 @@
-# Menome Technologies Presents Spatial Experiments with Neo4j!
+# Menome Technologies Presents Spatial Experiments with Neo4j - Now featuring GraphXR 3d Visualizations!
 
 Greetings! I have a long career in working with spatial data. This covers the range of standard GIS (ESRI and Geoserver, 3d modelling for mining operations, complex geological modelling, buildings and structures, finite element and numerical analysis. 
 
