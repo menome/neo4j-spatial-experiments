@@ -36,12 +36,39 @@ We at Menome Technologies feel that Neo4j has the potential to have a major impa
 
 It seemed appropriate therefore to focus the second post in our series of Neo4j Spatial Experiements on modelling borehole data with Neo4j. 
 
+## Modelling Boreholes With Neo4j
+
+Boreholes area foundational aspect of many forms of geological model. Boreholes are a powerful tool for understanding what is below the surface of the ground, and are used in many forms of geological modelling:
+
+- Soil Characterization to understand the structural aspects of the ground for engineering, environmental or geotechnical work (foundation design, )
+- Groundwater modelling: Locating subsurface water resources for water wells or other uses
+- Contaminate Detection: finding where spilled hazardous materials are located (salt, hydrocarbons etc.)
+- Remediation: removing contaminates by pumping contaminated water out of the ground and treating it
+- Mining Exploration: deep hardrock boreholes that are logged to locate metals such as gold, silver, zink, copper etc.
+- Petroleum Geology: the now well known fracking technique relies on directed drilling of boreholes
+
+All of these types of boreholes are well suited to being modelled with Neo4j. 
+
+To keep things simple though for this example I have chosen what is known as a Lithological soil classification borehole. These boreholes are reletively shallow and drilled into soil. The soil is logged using a standard classification method to identify key layers of soil. 
+
+The logs are used to delimit soil intervals down the hole. For example, a hole might contain 3 meters of Till, 1 meter of sand, 2 meters of boulders and then bedrock. The next hole beside it might have 3 meters of till, 2 meters of boulders, then bedrock. In this example, when the geologist interprets the two holes, the like material intervals are connected between the holes. The sand 'pinches out' somewhere between the two holes. This forms the basis of a simple geological model of the material beneth the ground. 
+
+For this example, we will do the first part of the process: taking the data from a set of borehole logs, and generating borehole intervals of linked lists in Neo4j. 
+
+![Boreholes as linked lists in Neo4j](./2_boreholes/images/borehole_graph.png)
+
 ### Geology Data Visualization
 
 While Modelling geological data is a big part of the equation of developing a geological model, being able to effectively visualize and work with the geological model is crucial.
 
-We were very excited therefore when we saw what Kinviz had developed with the GraphXR tool. The Kinviz team took the borehole model example, and projected it into GraphXR. 
+We were very excited therefore when we saw what Kinviz had developed with the GraphXR tool. I reached out to the Kinviz team following the presentation they did on GraphXR in the Neo4j Developer community. 
 
-![GraphXR 3D Borehole Visualization](./2_boreholes/GraphXR_3d_boreholes.png)
+The Kinviz team have been great to collaborate with, taking the borehole model example, and projected it into GraphXR. 
 
-[Read about Borehole Data Modelling wiht Neo4j Here](./borehole/readme.md)
+![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
+
+[Read about Borehole Data Modelling with Neo4j Here](./2_boreholes/readme.md)
+
+We will plan a follow up example as the next in our series on spatial experiements using Neo4j that will take interpreting geological data and constructing modles of the environment around us futher, so stay tuned!
+
+The Menome and Kinviz Teams.. 
