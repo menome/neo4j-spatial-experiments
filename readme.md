@@ -24,4 +24,24 @@ The Walk Score example is documented and stored in 1_walkscore directory. A furt
 
 ## Experiement 2 - Subsurface data - Modelling boreholes with Neo4j
 
-Coming Soon!
+One of the disruptive aspects of Neo4j is that the graph modelling approach makes it possible to model not just the data, but also the structure of the data as it would be in the real world. 
+
+This is a powerful enabler for geoscience related appliations for environmental, geotechnical, geological and geophysical data. Historically, these types of data require modelling the structural aspects such as the shape and location of an orebody, boreholes, environmental receptors, engineered structures and the data associated with those structures using multiple approaches and multiple systems. 
+
+Neo4j has both cartesian and spatial capabilities, and because most structural modelling approaches in the geosciences use meshes or linked lists to model data, Neo4j is very well suited to these use cases. 
+
+Further - Neo4j offers the potnetial to not only model the structures and data that compose those structures, but all adjacent and associated data in a single repository. It also offers powerful tools such as graph algorithms, natural language processing and the ability to factor in all decisions and versions of decisions made to develop a conceptual model of a complex site. 
+
+We at Menome Technologies feel that Neo4j has the potential to have a major impact on the world of geology and engineering, and we are working hard to use our team's domain expertise in environmental, oil and gas, engineering, geology and AEC to explore applying Neo4j's capabilities to the world of Geology and Engineering. 
+
+It seemed appropriate therefore to focus the second post in our series of Neo4j Spatial Experiements on modelling borehole data with Neo4j. 
+
+### Geology Data Visualization
+
+While Modelling geological data is a big part of the equation of developing a geological model, being able to effectively visualize and work with the geological model is crucial.
+
+We were very excited therefore when we saw what Kinviz had developed with the GraphXR tool. The Kinviz team took the borehole model example, and projected it into GraphXR. 
+
+![GraphXR 3D Borehole Visualization](./2_boreholes/GraphXR_3d_boreholes.png)
+
+[Read about Borehole Data Modelling wiht Neo4j Here](./borehole/readme.md)
