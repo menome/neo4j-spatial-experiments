@@ -65,9 +65,9 @@ We were very excited therefore when we saw what [Kineviz](https://www.kineviz.co
 
 The Kineviz team have been great to collaborate with and have taking the borehole model example, and projected it into GraphXR. With their help, we were able to create a 3d visualizaiton of the borehole data that is spatially accurate. GraphXR gives the ability to see the different layers, and manipulate the data set as well. 
 
-Details for this example including data, import CQL scripts and transforms required to generate borehole linked lists are located HERE: 
+Details for this example including data, import CQL scripts and transforms required to generate borehole linked lists are located in the following GitHub Repo: 
 
-[2 Borehole Example:](./2_boreholes/readme.md)
+[Borehole Example Github Repository:](https://github.com/menome/neo4j-spatial-experiments/tree/master/2_boreholes)
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
 
