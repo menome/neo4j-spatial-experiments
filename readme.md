@@ -63,11 +63,15 @@ While Modelling geological data is a big part of the equation of developing a ge
 
 We were very excited therefore when we saw what [Kineviz](https://www.kineviz.com)  had developed with the GraphXR tool. I reached out to the Kineviz team following the presentation they did on GraphXR in the Neo4j Developer community. 
 
-The Kineviz team have been great to collaborate with and have taking the borehole model example, and projected it into GraphXR. 
+The Kineviz team have been great to collaborate with and have taking the borehole model example, and projected it into GraphXR. With their help, we were able to create a 3d visualizaiton of the borehole data that is spatially accurate. GraphXR gives the ability to see the different layers, and manipulate the data set as well. 
+
+Details for this example including data, import CQL scripts and transforms required to generate borehole linked lists are located HERE: 
+
+[2 Borehole Example:](./2_boreholes/readme.md)
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
 
-[Borehole Data Modelling with Neo4j Data is HERE](./2_boreholes/readme.md)
+## Stay Tuned for more Geological Examples!
 
 We will plan a follow up example as the next in our series on spatial experiements using Neo4j that will take interpreting geological data and constructing modles of the environment around us futher, so stay tuned!
 
