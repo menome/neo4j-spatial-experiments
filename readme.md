@@ -12,16 +12,6 @@ This has the potential to be incredibly powerful and very disruptive to the worl
 
 My goal with these spatial experimentes is to explore using small,focused mini-projects the range of possiblities to validate how far I can take the spatial capabilities of neo4j.
 
-## Experiment 1 - Walkscore computation using Neo4j
-
-The first experiement was to take Open Street Map data and see if I could construct a basic spatial analysis using Neo4j. For this experiement I chose to pursue replicating the Walk Score algortihm. I did this because it is a well known, published algorithm that I could validate my work against. 
-
-The Walk Score example is documented and stored in 1_walkscore directory. A further experiement will seek to imporve and replace the base Walk Score algorithm using Graph Techniques for calculating actual distance instead of linear distance to assess features, and will combine the Yelp ratings scores data to factor in amenity quality as part of the rank. 
-
-[Read about Walkscore Here](./1_walkscore/readme.md)
-
-![Deck GL Visualization of Amenities](./1_walkscore/deck.png)
-
 ## Experiement 2 - Subsurface data - Modelling boreholes with Neo4j
 
 One of the disruptive aspects of Neo4j is that the graph modelling approach makes it possible to model not just the data, but also the structure of the data as it would be in the real world. 
@@ -70,6 +60,18 @@ Details for this example including data, import CQL scripts and transforms requi
 [Borehole Example Github Repository:](https://github.com/menome/neo4j-spatial-experiments/tree/master/2_boreholes)
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
+
+
+## Experiment 1 - Walkscore computation using Neo4j
+
+The first experiement was to take Open Street Map data and see if I could construct a basic spatial analysis using Neo4j. For this experiement I chose to pursue replicating the Walk Score algortihm. I did this because it is a well known, published algorithm that I could validate my work against. 
+
+The Walk Score example is documented and stored in 1_walkscore directory. A further experiement will seek to imporve and replace the base Walk Score algorithm using Graph Techniques for calculating actual distance instead of linear distance to assess features, and will combine the Yelp ratings scores data to factor in amenity quality as part of the rank. 
+
+[Read about Walkscore Here](./1_walkscore/readme.md)
+
+![Deck GL Visualization of Amenities](./1_walkscore/deck.png)
+
 
 ## Stay Tuned for more Geological Examples!
 

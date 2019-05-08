@@ -191,6 +191,11 @@ The immediate benefit is that the borehole data being a linked list of nodes is 
 In this case, we have only the collar, basic collar metadata, interval nodes with lithology including primary consituents of the layers the borehole passes through, and a detail textual description of those layers.
 
 
+
+## About The Contributors:
+
+A big thanks to the Kineviz team for helping bring this example to life!
+
 ### More details on Kineviz GraphXR:
 
 Kineviz develops visual analytics software and solutions. Kineviz's GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. For technical users, it's a highly flexible and extensible environment for conducting ad hoc analysis. For business users, it's a start-to-finish tool for intuitive, code-free investigation.
