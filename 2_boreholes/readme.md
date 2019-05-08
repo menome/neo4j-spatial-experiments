@@ -129,12 +129,53 @@ return c,interval
 
 ```
 
+### Generate A Simplified Layer Interpretation
+
+Geologists will go through a process to interpret the intervals on the boreholes into geological layers. These layers are a representation based on sparse data from the borehole intervals of what conceptually is below the surface. 
+
+Depending on the use of the geological data interpretations will vary in terms of level of detail. If the geologist is attempting to identify material for use for fill for a roadbed, understanding the soil stability or load capacity for a structure, or attempting to locate potential aquifers for a water source, the resulting interpretation may be very detailed.
+
+If the intent is to have a general characterization of a region, the layers may be less granular. 
+
+To keep things simple therefore for the purposes of this demonstration, we will create a new property called 'Layer' that will reduce the number of logged types down from >20 to 12:
+
+```
+
+MATCH (i:Interval) where i.Pri_Material <> '?' and i.Pri_Material <> 'no data' and i.Pri_Material <> 'not indicated' and i.Pri_Material <> 'no recovery' and i.Pri_Material <> 'no sample'
+with i,
+case
+when lower(i.Pri_Material) contains('clay') or lower(i.Pri_Material) contains('bentonite') then 'Clay'
+when lower(i.Pri_Material) contains('boulder')  then 'Boulders'
+when lower(i.Pri_Material) contains ('till') then 'Till'
+when lower(i.Pri_Material) ends with ('sand') then 'Sand'
+when lower(i.Pri_Material) ends with ('shale') then 'Shale'
+when lower(i.Pri_Material) contains ('gravel') then 'Gravel'
+when lower(i.Pri_Material) ends with ('mudstone') then 'Mudstone'
+when lower(i.Pri_Material) contains ('bedrock') then 'Bedrock'
+when lower(i.Pri_Material) ends with ('fill') then 'Fill'
+when lower(i.Pri_Material) ends with ('silt') then 'Silt'
+when lower(i.Pri_Material) ends with ('siltstone') then 'Siltstone'
+when lower(i.Pri_Material) ends with ('pebbles') then 'Pebbles'
+when lower(i.Pri_Material) contains('rocks') or lower(i.Pri_Material) contains('stones') then 'Rocks'
+else i.Pri_Material
+ 
+end as layer
+set i.Layer = layer
+```
+
+
 ## Visualizing the Borehole Data
 
-There are a large number of ways to visulize borehole data, although due to the specific domain associted with borehole data, these typically rely on expensive commercial software. 
+There are a large number of ways to visulize borehole data, although due to the specific domain associted with borehole data, these typically rely powerful geological interpretation software such as Lepfrog. 
+
+For the purposes of this demo, which are to illustrate how the structure of the data and the data itself may be fully represented in a single database in which the graph ARE the boreholes, 
 
 
 ## Visualizing Using Kineviz
+
+
+Kineviz develops visual analytics software and solutions. Kineviz has developed GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. (see more about Kineviz and GraphXR below)
+
 
 https://www.kineviz.com/graphxr
 
@@ -148,4 +189,34 @@ I wanted to try as well using the graph, spatial structure, and text analytics c
 The immediate benefit is that the borehole data being a linked list of nodes is closer from a modelling perspective to reality. This simplifies the data modelling aspects considerably especially when it comes to complex boreholes. I will be looking to try the approach out on an oil and gas well in a future post to validate this. 
 
 In this case, we have only the collar, basic collar metadata, interval nodes with lithology including primary consituents of the layers the borehole passes through, and a detail textual description of those layers.
+
+
+### More details on Kineviz GraphXR:
+
+Kineviz develops visual analytics software and solutions. Kineviz's GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. For technical users, it's a highly flexible and extensible environment for conducting ad hoc analysis. For business users, it's a start-to-finish tool for intuitive, code-free investigation.
+
+Collect data from Relational and Graph databases, CSVs, and Json. 
+Cleanse and enrich with built-in tools as well as API calls. 
+Analyze links, properties, time series, and spatial data within a unified, animated context. 
+
+Save back to Neo4j, output as a report, or embed in your webpage. 
+GraphXR supports a wide range of applications including law enforcement, medical research, and knowledge management.  
+
+[Kineviz GraphXR](https://www.kineviz.com/graphxr)
+
+### More details on Menome Technologies:
+
+Menome Technologies Inc -> Imagine What You Could Know….
+
+Menome Technologies has invented breakthrough data refinement, data management, and AI-based analytical solutions to provide data-driven organizations with unprecedented visibility and contextual understanding of their corporation’s entire set of knowledge assets.  
+
+Information that was previously inaccessible – historic information, reports, PDFs, presentations, and articles – can be seamlessly integrated with all other corporate information for more accurate decision-making.
+
+At mining, energy, and environmental companies, Menome integrates field telemetry, environmental assessments, historical reports, risk assessments, and project data.
+
+Using these Menome powerful proprietary machine-based-learning tools to identify hidden data structures and identify and uncover trends, to provide the richest and most accurate understanding of the impacts of key decision alternatives. 
+
+Decisions based on holistic data knowledges are more likely to drive productivity, reduce risk, and generation profits. 
+
+[Menome Technologies Inc.](https://www.menome.com)
 

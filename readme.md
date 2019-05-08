@@ -67,8 +67,35 @@ The Kineviz team have been great to collaborate with and have taking the borehol
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
 
-[Read about Borehole Data Modelling with Neo4j Here](./2_boreholes/readme.md)
+[Borehole Data Modelling with Neo4j Data is HERE](./2_boreholes/readme.md)
 
 We will plan a follow up example as the next in our series on spatial experiements using Neo4j that will take interpreting geological data and constructing modles of the environment around us futher, so stay tuned!
 
-The Menome and Kineviz Teams.. 
+### More details on Kineviz GraphXR:
+
+Kineviz develops visual analytics software and solutions. Kineviz's GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. For technical users, it's a highly flexible and extensible environment for conducting ad hoc analysis. For business users, it's a start-to-finish tool for intuitive, code-free investigation.
+
+Collect data from Relational and Graph databases, CSVs, and Json. 
+Cleanse and enrich with built-in tools as well as API calls. 
+Analyze links, properties, time series, and spatial data within a unified, animated context. 
+
+Save back to Neo4j, output as a report, or embed in your webpage. 
+GraphXR supports a wide range of applications including law enforcement, medical research, and knowledge management.  
+
+[Kineviz GraphXR](https://www.kineviz.com/graphxr)
+
+### More details on Menome Technologies:
+
+Menome Technologies Inc -> Imagine What You Could Know….
+
+Menome Technologies has invented breakthrough data refinement, data management, and AI-based analytical solutions to provide data-driven organizations with unprecedented visibility and contextual understanding of their corporation’s entire set of knowledge assets.  
+
+Information that was previously inaccessible – historic information, reports, PDFs, presentations, and articles – can be seamlessly integrated with all other corporate information for more accurate decision-making.
+
+At mining, energy, and environmental companies, Menome integrates field telemetry, environmental assessments, historical reports, risk assessments, and project data.
+
+Using these Menome powerful proprietary machine-based-learning tools to identify hidden data structures and identify and uncover trends, to provide the richest and most accurate understanding of the impacts of key decision alternatives. 
+
+Decisions based on holistic data knowledges are more likely to drive productivity, reduce risk, and generation profits. 
+
+[Menome Technologies Inc.](https://www.menome.com)
