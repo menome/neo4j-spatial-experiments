@@ -61,6 +61,8 @@ Details for this example including data, import CQL scripts and transforms requi
 
 ![GraphXR 3D Borehole Visualization](./2_boreholes/images/GraphXR_3d_boreholes.png)
 
+You can check out the final visualization here, but its more rewarding if you build er from scratch!
+[Borehole Example GraphXR 3d Viz](https://graphxr.kineviz.com/share/5cd36d001eb32e0067057519/Borehole/5cd36db11eb32e006705751c)
 
 ## Experiment 1 - Walkscore computation using Neo4j
 

@@ -171,7 +171,7 @@ There are a large number of ways to visulize borehole data, although due to the 
 For the purposes of this demo, which are to illustrate how the structure of the data and the data itself may be fully represented in a single database in which the graph ARE the boreholes, 
 
 
-## Visualizing Using Kineviz
+## Visualizing Using Kineviz GraphXR
 
 
 Kineviz develops visual analytics software and solutions. Kineviz has developed GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. (see more about Kineviz and GraphXR below)
@@ -179,7 +179,8 @@ Kineviz develops visual analytics software and solutions. Kineviz has developed 
 
 https://www.kineviz.com/graphxr
 
-
+You can check out the final rendering here: 
+https://graphxr.kineviz.com/share/5cd36d001eb32e0067057519/Borehole/5cd36db11eb32e006705751c
 
 
 ## Analyze and Correlate the Borehole Data in Neo4j
