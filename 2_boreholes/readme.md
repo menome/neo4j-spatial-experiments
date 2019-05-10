@@ -129,6 +129,11 @@ return c,interval
 
 ```
 
+We should end up with linked lists of boreholes of boreholes:
+
+![GraphXR 3D Borehole Visualization](./images/borehole_graph.png)
+
+
 ### Generate A Simplified Layer Interpretation
 
 Geologists will go through a process to interpret the intervals on the boreholes into geological layers. These layers are a representation based on sparse data from the borehole intervals of what conceptually is below the surface. 
@@ -173,23 +178,53 @@ For the purposes of this demo, which are to illustrate how the structure of the 
 
 ## Visualizing Using Kineviz GraphXR
 
-
 Kineviz develops visual analytics software and solutions. Kineviz has developed GraphXR platform offers unprecedented speed, power, and ease of use for deriving insight from sources such as geospatial, time series, rich documents, financial transactions, and social media data. (see more about Kineviz and GraphXR below)
-
 
 https://www.kineviz.com/graphxr
 
-You can check out the final rendering here: 
+
+We can use the following query in GraphXR to pull back boreholes (exlude holes where we don't have logged material):
+
+```
+
+MATCH (c:Collar)-[:NEXT_INTERVAL*]-(i:Interval) where i.Pri_Material <> '?' and i.Pri_Material <> 'no data' and i.Pri_Material <> 'not indicated' return c,i
+
+```
+
+We start by locating the boreholes on a 2d map:
+
+![Borehole collar location:](./images/190409-2_BoreholeGrid.png)
+
+Move this into a 3d view for interpretation:
+
+![3d View of collars and intervals:](./images/graphXR_2.png)
+
+Using GraphXR Project settings, set the view to display the Layer property we created:
+
+![3d View of collars and intervals:](./images/graphXR_3.png)
+
+Now select the Shale layer and rotate the model to get a sense of where the shale resides:
+
+![3d View of collars and intervals:](./images/graphXR_4.png)
+
+
+Kineviz has kindly provided a rendered view ready to go in GraphXR:
+
 https://graphxr.kineviz.com/share/5cd36d001eb32e0067057519/Borehole/5cd36db11eb32e006705751c
 
 
-## Analyze and Correlate the Borehole Data in Neo4j
+## Next Steps: Analyze and Correlate the Borehole Data
 
-I wanted to try as well using the graph, spatial structure, and text analytics capabilities of neo4j to determine what advantages might be derived from modelling boreholes as a graph.
+The geologist would typically start to work up an interpretation of the borehole data by linking the layers together into geological cross sections. More modern tools such as Leapfrog can automatically generate complex 3d models from borehole data. 
 
-The immediate benefit is that the borehole data being a linked list of nodes is closer from a modelling perspective to reality. This simplifies the data modelling aspects considerably especially when it comes to complex boreholes. I will be looking to try the approach out on an oil and gas well in a future post to validate this. 
+Most of these tools though keep the geology and the elements and decisions that went into the model seperate if they retain them at all. My sense is that due to the fact that data in Neo4j IS the model, it should be possible to handle the modelling and retain all the associated data in the same graph. 
 
-In this case, we have only the collar, basic collar metadata, interval nodes with lithology including primary consituents of the layers the borehole passes through, and a detail textual description of those layers.
+I'll be exploring this in future posts. 
+
+If you have any questions, please reach out to me via Linked in, or on the neo4j community. 
+
+Cheers!
+Mike M. 
 
 
 
